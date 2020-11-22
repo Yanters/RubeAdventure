@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5430218064686646200}
   - component: {fileID: 3907727547716809343}
-  - component: {fileID: 5984157454649344708}
+  - component: {fileID: 7681476002921684474}
+  - component: {fileID: 2259989877220219513}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -83,8 +84,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!61 &5984157454649344708
-BoxCollider2D:
+--- !u!70 &7681476002921684474
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,16 +97,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.677187, y: 0.9488821}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 8.45, y: 7}
-    newSize: {x: 8.45, y: 7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.095627, y: 1.7109718}
-  m_EdgeRadius: 0
+  m_Offset: {x: -1.6771998, y: 1.3214704}
+  m_Size: {x: 5.0956626, y: 2.205465}
+  m_Direction: 1
+--- !u!70 &2259989877220219513
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493983505699240731}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.262795, y: 1.084475}
+  m_Size: {x: 0.6741286, y: 0.30952212}
+  m_Direction: 1
