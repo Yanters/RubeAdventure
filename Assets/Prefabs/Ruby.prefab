@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4778778403602444795}
   - component: {fileID: 7462790452451831958}
   - component: {fileID: 964885883086463520}
+  - component: {fileID: 6076416332391727380}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -137,3 +138,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0015134137, y: 0.06671155}
   m_Size: {x: 0.35125077, y: 0.13342793}
   m_Direction: 1
+--- !u!95 &6076416332391727380
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778778403602444792}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
