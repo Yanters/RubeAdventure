@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    public GameObject projectilePrefab;
+
     public float speed = 3.0f;
 
     public int maxHealth = 5;
@@ -55,6 +57,12 @@ public class RubyController : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Launch();
+        }
+
     }
 
     void FixedUpdate()
@@ -81,4 +89,15 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
+
+    void Launch()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, Rubyrigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(lookDirection, 300);
+
+        animator.SetTrigger("Launch");
+    }
+
 }
